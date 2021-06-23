@@ -65,8 +65,6 @@ body, html {
 }
 
 .banner-item {
-    position: relative;
-    justify-self: center;
     border: 1px solid #4E5960;
     border-radius: 5;
     justify-self: center;
@@ -99,18 +97,33 @@ body, html {
 .product-item {
     box-shadow: 0px 0px 3px 0.2px #4E5960;
     flex-direction: row;
-    margin-bottom: 25px;
+    margin: 0.5rem 1rem 0.5rem 1rem;
     flex-basis: 30%;
     justify-content: center;
     align-items: center;
+    
 }
 
 .product-item img{ 
-    max-width: 300px;
+    max-width: 325px;
 }
 
 .product-img {
-   justify-self: center;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    word-wrap: normal;
+    padding: 0.5rem;
+}
+
+.price {
+    text-align: center;
+    color: tomato;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
 }
 
 footer {
