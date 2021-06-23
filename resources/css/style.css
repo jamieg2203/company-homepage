@@ -185,7 +185,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1230px) {
     body, html {
         font-size: 12px;
     }
