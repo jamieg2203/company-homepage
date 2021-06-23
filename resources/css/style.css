@@ -228,6 +228,7 @@ footer {
     .header-grid {
         grid-template-columns: 4fr 1fr;
     }
+    body, html {
+        font-size: 10px;
+    }
 }
-
-        
