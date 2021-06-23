@@ -5,6 +5,7 @@ body, html {
     box-sizing: border-box;
     width: 100%;
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 
 .header-grid {
@@ -23,30 +24,74 @@ body, html {
     width: auto;
 }
 
-.social {
+.social, .account {
     align-self: center;
 }
 
-#nav-flex ul{
+.social img, .account img {
+    padding: 0 1rem 0 1rem;
+}
+
+#nav-flex {
     background-color: #4E5960;
     height: 100%;
     margin: 1rem 0 1rem 0;
-    padding: 1.5rem 0 1.5rem 0;
+    box-shadow: 0px 0px 3px 2px darkgray;
+}
+
+#nav-flex ul{
+    margin: 0 1rem 0 1rem;
+    padding: 1.4rem 0 1.4rem 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
     list-style: none;
-    box-shadow: 0px 0px 3px 2px darkgray;
+    
     
 }
 
 .nav-item {
     align-self: center;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1.2rem 0 2.4rem;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
 
+}
+
+.home {
+    background-image: url("https://img.icons8.com/glyph-neue/32/ffffff/home.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.75rem;
+}
+
+.bedroom {
+    background-image: url("https://img.icons8.com/glyph-neue/32/ffffff/bed.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.75rem;
+}
+
+.living {
+    background-image: url("https://img.icons8.com/glyph-neue/32/ffffff/retro-tv.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.75rem;
+}
+
+.dining {
+    background-image: url("https://img.icons8.com/glyph-neue/32/ffffff/restaurant-table.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.75rem;
+}
+
+.office {
+    background-image: url("https://img.icons8.com/ios-filled/32/ffffff/office-chair-2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.75rem;
 }
 
 #banner {
@@ -133,3 +178,56 @@ footer {
     padding: 3rem;
 
 }
+
+@media only screen and (max-width: 1400px) {
+    body, html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    body, html {
+        font-size: 12px;
+    }
+    .home, .bedroom, .living, .dining, .office {
+        background-image: none;
+    }
+
+    .social img, .account img {
+        max-width: 2.5rem;
+    }
+    .nav-item {
+        padding: 0 1rem 0 1rem;
+        color: white;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .home {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .social {
+        display: none;
+    }
+    .header-grid {
+        max-height: 200px;
+        width: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 150px;
+        grid-template-areas: "logo logo account";
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .header-grid {
+        grid-template-columns: 4fr 1fr;
+    }
+}
+
+        
